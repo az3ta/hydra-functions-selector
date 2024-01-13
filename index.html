@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hydra Functions Selector</title>
+  </head>
+  <body
+    class="p-8 flex flex-col space-y-4 text-gray-950 bg-gray-50 h-screen justify-between"
+  >
+    <header>
+      <h1 class="font-bold text-xl">
+        Hydra Functions Selector
+      </h1>
+      <small
+        >A small tool that let's select random
+        <a
+          href="https://hydra.ojack.xyz/api/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline hover:text-blue-600"
+          >functions of Hydra</a
+        ></small
+      >
+    </header>
+
+    <main class="mb-auto h-full flex-col flex space-y-4">
+      <button
+        role="button"
+        type="button"
+        class="border border-gray-300 px-2 py-1 rounded w-fit hover:bg-gray-950 hover:text-gray-50"
+        id="randomizeButton"
+      >
+        Refresh Functions
+      </button>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-1">
+          <ul
+            class="list-disc bg-gray-200 p-2 w-fit"
+            id="instructions"
+          ></ul>
+        </div>
+        <iframe
+          class="col-span-2"
+          id="myIframe"
+          width="100%"
+          height="800px"
+          allow="microphone; camera"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer class="text-xs">
+      <ul class="flex flex-row gap-2">
+        <li>
+          <a
+            class="underline hover:text-blue-600"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://andreazaccuri.com"
+            >by az3ta</a
+          >
+        </li>
+        <li>
+          <a
+            class="underline hover:text-blue-600"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="#"
+            >github</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
