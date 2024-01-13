@@ -7,6 +7,10 @@
       content="width=device-width, initial-scale=1.0"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="/public/assets/css/style.css"
+    />
     <title>Hydra Functions Selector</title>
   </head>
   <body
@@ -29,18 +33,21 @@
     </header>
 
     <main class="mb-auto h-full flex-col flex space-y-4">
-      <button
+      <!--       <button
         role="button"
         type="button"
         class="border border-gray-300 px-2 py-1 rounded w-fit hover:bg-gray-950 hover:text-gray-50"
         id="randomizeButton"
       >
         Refresh Functions
-      </button>
+      </button> -->
+      <h3 class="italic text-gray-500">
+        Refresh the page for more functions
+      </h3>
       <div class="grid grid-cols-3 gap-4">
         <div class="col-span-1">
           <ul
-            class="list-disc bg-gray-200 p-2 w-fit"
+            class="flex flex-col space-y-1 w-fit"
             id="instructions"
           ></ul>
         </div>
@@ -70,12 +77,15 @@
             class="underline hover:text-blue-600"
             target="_blank"
             rel="noopener noreferrer"
-            href="#"
+            href="https://github.com/az3ta/hydra-functions-selector"
             >github</a
           >
         </li>
       </ul>
     </footer>
-    <script type="module" src="./app.js"></script>
+    <script
+      type="module"
+      src="./assets/js/script.js"
+    ></script>
   </body>
 </html>

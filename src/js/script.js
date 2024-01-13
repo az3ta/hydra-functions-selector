@@ -24,10 +24,12 @@ function selectRandom(value) {
   Object.entries(randomSelections).forEach(
     ([key, item]) => {
       const li = document.createElement("li");
+      const span = document.createElement("span");
       const a = document.createElement("a");
 
+      span.textContent = `${key}`;
       a.setAttribute("href", item.url);
-      a.textContent = item.name;
+      a.textContent = `${item.name}`;
 
       a.addEventListener("click", function (event) {
         event.preventDefault();
@@ -38,6 +40,10 @@ function selectRandom(value) {
         }
       });
 
+      li.classList.add("grid", "grid-cols-2", "gap-4");
+      span.classList.add("font-bold", "w-2");
+      a.classList.add("hover:text-blue-500", "underline");
+      li.appendChild(span);
       li.appendChild(a);
       instructions.appendChild(li);
     }
