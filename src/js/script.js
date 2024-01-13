@@ -41,8 +41,12 @@ function selectRandom(value) {
       });
 
       li.classList.add("grid", "grid-cols-2", "gap-4");
-      span.classList.add("font-bold", "w-2");
-      a.classList.add("hover:text-blue-500", "underline");
+      span.classList.add("font-bold", "col-span-1");
+      a.classList.add(
+        "hover:text-blue-500",
+        "underline",
+        "col-span-1"
+      );
       li.appendChild(span);
       li.appendChild(a);
       instructions.appendChild(li);
